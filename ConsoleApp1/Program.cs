@@ -6,7 +6,12 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("inserisci un numero da convertire");
+            int value =int.Parse(Console.ReadLine());
+            string binary = Convert.ToString(value, 2);
+            Console.WriteLine($"{binary}");
+            Console.ReadLine();
+
         }
     }
 }
